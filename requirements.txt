@@ -3,3 +3,4 @@ gunicorn
 transformers==4.40.2
 accelerate==0.27.2
 torch
+prometheus_client
