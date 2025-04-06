@@ -1,0 +1,72 @@
+############################################
+#  Python / Flask
+############################################
+# Byte‑compiled & optimized files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual‑environment folders
+.venv/
+venv/
+env/
+
+# Local settings & secrets
+.env
+.env.*
+
+# Test & coverage artifacts
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Static analysis caches
+.mypy_cache/
+.pylint.d/
+.pyre/
+ruff_cache/
+
+# Jupyter & notebooks
+.ipynb_checkpoints/
+
+############################################
+#  Hugging Face / model caches
+############################################
+.cache/
+huggingface/
+hf_cache/
+
+############################################
+#  OS‑ & editor‑specific junk
+############################################
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# VS Code / PyCharm / IntelliJ
+.vscode/
+.idea/
+*.suo
+*.sw?
+*.user
+*.log
+
+############################################
+#  Packaging / builds
+############################################
+dist/
+build/
+*.egg-info/
+*.egg
+pip-wheel-metadata/
+
+# Logs
+logs/
+*.log
