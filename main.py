@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 from transformers import pipeline
 from prometheus_client import Counter, Histogram, generate_latest, CONTENT_TYPE_LATEST
 import time
@@ -18,6 +18,10 @@ REQUEST_COUNT = Counter(
 REQUEST_LATENCY = Histogram(
     "qa_request_latency_seconds", "Latency of /predict requests"
 )
+
+@app.route("/")
+def home():
+    return render_template("index.html")
 
 @app.route("/predict", methods=["POST"])
 def predict():
